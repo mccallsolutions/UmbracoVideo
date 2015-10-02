@@ -1,0 +1,17 @@
+﻿{
+    "propertyEditors": [
+        {
+            "alias": "UmbracoVideo",
+            "name": "Umbraco Video",
+            "editor": {
+                "view": "~/App_Plugins/UmbracoVideo/umbracoVideoEditor.html"
+            }
+        }
+    ],
+    "javascript": [        
+        "~/App_Plugins/UmbracoVideo/umbracoVideoEditor.controller.js", 
+        "~/App_Plugins/UmbracoVideo/umbracoVideoProviders.resource.js",
+        "~/App_Plugins/UmbracoVideo/Providers/SelfHosted/directive.js",
+        "~/App_Plugins/UmbracoVideo/Providers/Vimeo/directive.js"        
+    ]
+}

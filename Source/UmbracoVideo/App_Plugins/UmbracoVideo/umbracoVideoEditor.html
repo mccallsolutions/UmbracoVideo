@@ -1,0 +1,10 @@
+﻿<div ng-controller="ShaneBru.UmbracoVideo">
+    <select id="videoProviders"
+            class="umb-editor umb-dropdown"
+            ng-model="selectedVideoProvider"
+            ng-options="videoProvider.Name for videoProvider in model.value.Providers"></select>
+    <div id="providerEditors">        
+        <div uv-selfhosted ng-show="selectedVideoProvider.Alias === 'SelfHosted'"></div>
+        <div uv-vimeo ng-show="selectedVideoProvider.Alias === 'Vimeo'"></div>
+    </div>
+</div>
